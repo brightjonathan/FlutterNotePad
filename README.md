@@ -1,16 +1,2 @@
 # notepad
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ This flutter mobile Notepad is a small and fast notetaking app for making notes, memos, or just any plain text content. Features: * simple interface that most of the users find easy to use.  no limits on note's length or number of notes (of course there's a limit to phone's storage).
