@@ -21,6 +21,8 @@ class _Todo_listState extends State<Todo_list> {
               style: TextStyle(
                 fontSize: 30,
                 color: Colors.white,
+
+                
               )
               )
               ),
