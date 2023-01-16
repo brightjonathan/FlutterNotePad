@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     //taking the bg color for the header
     SystemChrome.setSystemUIOverlayStyle(
         const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
@@ -23,3 +22,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
