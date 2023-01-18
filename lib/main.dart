@@ -1,17 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import './Screen/home.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'Pages/homePage.dart';
 
-void main() {
+void main()async {
+  // init the hive
+await Hive.initFlutter();
+
+  // open a box
+  var box = await Hive.openBox('mybox');
+
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    
     //taking the bg color for the header
     SystemChrome.setSystemUIOverlayStyle(
         const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
@@ -19,7 +27,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: Todo_list(),
+      home: homePage(),
     );
   }
 }
+
+
+
